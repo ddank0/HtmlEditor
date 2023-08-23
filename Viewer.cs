@@ -30,7 +30,7 @@ public static class Viewer {
 			if (strong.IsMatch(words[i]))
 			{
 				Console.ForegroundColor = ConsoleColor.Blue;
-				//o substring peg aa quantidade desejada de caracteres apartir de uma posição
+				//o substring peg aa quantidade desejada de caracteres apartir de uma posiï¿½ï¿½o
 				//logo abaixo se pega a primeira ocorrencia do ">" e a ultima do "<"
 				//e diminue pela primeira ocorrencia do ">" para obter o numero de carateres
 				Console.Write(
@@ -58,7 +58,7 @@ public static class Viewer {
 
 		Console.Clear();
 		Console.WriteLine("Digite o nome do arquivo que deseja visualizar:");
-		string fileName = Console.ReadLine();
+		var fileName = Console.ReadLine();
 		string filePath = $"{Program.savePath}{fileName}{Program.fileExtension}";
 		
 		if(!File.Exists(filePath)) 
